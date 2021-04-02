@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_photo"
+    tools:context=".ClientUser.ClientUserSignInActivity">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="8dp"
+    android:layout_centerInParent="true">
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/client_user_phone"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="4dp"
+       android:textColorHint="@android:color/white"
+       app:counterTextColor="@android:color/white"
+       app:boxStrokeColor="@android:color/white"
+       app:hintTextColor="@android:color/white">
+
+     <com.google.android.material.textfield.TextInputEditText
+         android:id="@+id/tie_client_user_phone"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="phone"
+         android:inputType="phone"
+         android:text=""
+         android:textColor="@android:color/white"
+         android:textColorHint="@android:color/white"
+         android:backgroundTint="#A9424242"
+         android:textSize="20sp">
+
+     </com.google.android.material.textfield.TextInputEditText>
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/client_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        android:textColorHint="@android:color/white"
+        app:counterTextColor="@android:color/white"
+        app:boxStrokeColor="@android:color/white"
+        app:hintTextColor="@android:color/white">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/tie_client_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:inputType="numberPassword"
+        android:text=""
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:backgroundTint="#9F8BC34A"
+        app:cornerRadius="30dp"
+        android:textSize="20sp">
+
+    </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/client_signin_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="30dp"
+        android:text="sign in"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_blue_light"
+        app:cornerRadius="10dp">
+
+    </com.google.android.material.button.MaterialButton>
+
+</LinearLayout>
+
+</RelativeLayout>
